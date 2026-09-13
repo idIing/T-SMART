@@ -1,0 +1,50 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Pytest
+.pytest_cache/
+.coverage
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# MMTS-BENCH data (download separately; third-party, not redistributed here)
+MMTS-BENCH/
+
+# Run outputs are ad-hoc and heavy, except the curated All/baseline snapshot that
+# make_paper_tables.py reads to rebuild Table 2. A blanket "outputs/" would make
+# that snapshot unreachable: git cannot re-include a file inside an excluded
+# directory, so each parent has to stay traversable.
+outputs/*
+!outputs/final/
+outputs/final/*
+!outputs/final/mmts_results_All_baseline_*.csv
+!outputs/final/mmts_run_All_baseline_*.json
+# The llm_numeric control arm on Base: diff_numeric.py joins it against the
+# All/baseline CSV above to produce the abstract's closed-form headline, so it
+# is load-bearing evidence too, not an ad-hoc output.
+!outputs/final/mmts_results_Base_llm_numeric_*.csv
+!outputs/final/mmts_run_Base_llm_numeric_*.json
+!outputs/final/numeric_diff_Base.txt
+# Checkpoints are resumption scratch, written every N rows and heavy. They match
+# the mmts_results_* negations above on the bare glob, so re-exclude them last.
+outputs/final/*_checkpoint.csv

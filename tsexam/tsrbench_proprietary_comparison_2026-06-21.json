@@ -1,0 +1,223 @@
+{
+  "comparison_rows": [
+    {
+      "category": "Agentic",
+      "decision_avg": "37.0",
+      "model": "T-SMART Gemini-3.1-flash-lite baseline (ours, headline-compatible)",
+      "notes": "local run; n=1010; errors=0",
+      "official_overall": "",
+      "overlap_delta_vs_ours": "0.0",
+      "reasoning_avg": "35.8",
+      "weighted_overlap": "36.1"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 33.1,
+      "model": "GPT-5 (T+V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 55.6,
+      "overlap_delta_vs_ours": "+10.2",
+      "reasoning_avg": 52.2,
+      "weighted_overlap": "46.4"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 31.9,
+      "model": "GPT-5 (T)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 55.5,
+      "overlap_delta_vs_ours": "+12.0",
+      "reasoning_avg": 58.7,
+      "weighted_overlap": "48.2"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 28.5,
+      "model": "GPT-5-mini-high (T+V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 54.1,
+      "overlap_delta_vs_ours": "+5.9",
+      "reasoning_avg": 59.7,
+      "weighted_overlap": "42.0"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 24.8,
+      "model": "o4-mini-high (T+V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 52.5,
+      "overlap_delta_vs_ours": "+1.6",
+      "reasoning_avg": 56.9,
+      "weighted_overlap": "37.7"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 28.4,
+      "model": "GPT-5 (V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 52.4,
+      "overlap_delta_vs_ours": "+8.9",
+      "reasoning_avg": 55.7,
+      "weighted_overlap": "45.1"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 32.9,
+      "model": "o4-mini (T+V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 48.2,
+      "overlap_delta_vs_ours": "-1.1",
+      "reasoning_avg": 49.5,
+      "weighted_overlap": "35.0"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 33.2,
+      "model": "o4-mini (T)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 47.7,
+      "overlap_delta_vs_ours": "+4.1",
+      "reasoning_avg": 51.6,
+      "weighted_overlap": "40.3"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 32.0,
+      "model": "GPT-5-mini (T+V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 46.9,
+      "overlap_delta_vs_ours": "-1.4",
+      "reasoning_avg": 50.6,
+      "weighted_overlap": "34.7"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 36.1,
+      "model": "o4-mini (V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 46.6,
+      "overlap_delta_vs_ours": "+2.1",
+      "reasoning_avg": 46.4,
+      "weighted_overlap": "38.3"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 32.9,
+      "model": "GPT-5-mini (T)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 46.6,
+      "overlap_delta_vs_ours": "+3.8",
+      "reasoning_avg": 52.3,
+      "weighted_overlap": "39.9"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 42.0,
+      "model": "Gemini-2.5-Flash (T+V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 46.5,
+      "overlap_delta_vs_ours": "+4.6",
+      "reasoning_avg": 44.1,
+      "weighted_overlap": "40.8"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 27.1,
+      "model": "GPT-5-mini (V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 46.0,
+      "overlap_delta_vs_ours": "+1.2",
+      "reasoning_avg": 48.8,
+      "weighted_overlap": "37.4"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 30.7,
+      "model": "DeepSeek-V-3.2 (T)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 39.1,
+      "overlap_delta_vs_ours": "-3.2",
+      "reasoning_avg": 36.6,
+      "weighted_overlap": "32.9"
+    },
+    {
+      "category": "Proprietary",
+      "decision_avg": 23.1,
+      "model": "Claude-4.5-Haiku (T+V)",
+      "notes": "official TSRBench leaderboard row",
+      "official_overall": 37.1,
+      "overlap_delta_vs_ours": "-0.6",
+      "reasoning_avg": 43.1,
+      "weighted_overlap": "35.5"
+    }
+  ],
+  "leaderboard_category_counts": {
+    "Open-source LLM": 12,
+    "Open-source VLM": 13,
+    "Proprietary": 14,
+    "TSLLM": 2
+  },
+  "local_dimension_stats": {
+    "decision": {
+      "accuracy": 37.0,
+      "correct": 111,
+      "n": 300
+    },
+    "reasoning": {
+      "accuracy": 35.774647887323944,
+      "correct": 254,
+      "n": 710
+    }
+  },
+  "local_rows": 1010,
+  "local_run": "tsr_bench/outputs/tsrbench_results_baseline_20260621_141547.csv",
+  "local_task_stats": {
+    "Advanced Mathematical Reasoning": {
+      "accuracy": 47.666666666666664,
+      "correct": 143,
+      "n": 300
+    },
+    "Decision-Making": {
+      "accuracy": 37.0,
+      "correct": 111,
+      "n": 300
+    },
+    "Etiological Reasoning": {
+      "accuracy": 6.666666666666667,
+      "correct": 10,
+      "n": 150
+    },
+    "Inductive Reasoning": {
+      "accuracy": 34.0,
+      "correct": 17,
+      "n": 50
+    },
+    "Temporal Relationship Reasoning": {
+      "accuracy": 40.0,
+      "correct": 64,
+      "n": 160
+    },
+    "numerical_reasoning": {
+      "accuracy": 40.0,
+      "correct": 20,
+      "n": 50
+    }
+  },
+  "overlap_weights": {
+    "DR": 300,
+    "ER": 150,
+    "IR": 50,
+    "NR": 50,
+    "QuantDM": 300,
+    "TR": 160
+  },
+  "source_url": "https://tsrbench.github.io/website/data/tsrbench_results.json",
+  "task_map": {
+    "Advanced Mathematical Reasoning": "DR",
+    "Decision-Making": "QuantDM",
+    "Etiological Reasoning": "ER",
+    "Inductive Reasoning": "IR",
+    "Temporal Relationship Reasoning": "TR",
+    "numerical_reasoning": "NR"
+  }
+}

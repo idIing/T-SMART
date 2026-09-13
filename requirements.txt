@@ -1,0 +1,27 @@
+# T-SMART — full environment for reproducing the paper's runs.
+#
+#   python -m venv .venv && . .venv/bin/activate
+#   pip install -r requirements.txt
+#   pip install -e tsqa
+#
+# The engine's own runtime deps are declared in tsqa/setup.py; this file pins the
+# additional packages the evaluation harnesses, analysis scripts, and figure
+# scripts need. Figure-only extras live in figures/requirements.txt.
+
+# --- engine (mirrors tsqa/setup.py install_requires) ---
+numpy>=1.24
+scipy>=1.10
+statsmodels>=0.14
+ruptures>=1.1
+tqdm>=4.65
+google-genai>=1.0
+matplotlib>=3.7
+pillow>=10.0
+
+# --- evaluation harnesses (tsexam/, mmts_bench/) ---
+pandas>=2.0
+datasets>=2.14          # TimeSeriesExam / MMTS-Bench loading via HuggingFace
+python-dotenv>=1.0      # reads GEMINI_API_KEY from a repo-root .env
+
+# --- tests ---
+pytest>=7.0

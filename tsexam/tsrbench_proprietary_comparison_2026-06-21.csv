@@ -1,0 +1,16 @@
+model,category,official_overall,weighted_overlap,overlap_delta_vs_ours,reasoning_avg,decision_avg,notes
+"T-SMART Gemini-3.1-flash-lite baseline (ours, headline-compatible)",Agentic,,36.1,0.0,35.8,37.0,local run; n=1010; errors=0
+GPT-5 (T+V),Proprietary,55.6,46.4,+10.2,52.2,33.1,official TSRBench leaderboard row
+GPT-5 (T),Proprietary,55.5,48.2,+12.0,58.7,31.9,official TSRBench leaderboard row
+GPT-5-mini-high (T+V),Proprietary,54.1,42.0,+5.9,59.7,28.5,official TSRBench leaderboard row
+o4-mini-high (T+V),Proprietary,52.5,37.7,+1.6,56.9,24.8,official TSRBench leaderboard row
+GPT-5 (V),Proprietary,52.4,45.1,+8.9,55.7,28.4,official TSRBench leaderboard row
+o4-mini (T+V),Proprietary,48.2,35.0,-1.1,49.5,32.9,official TSRBench leaderboard row
+o4-mini (T),Proprietary,47.7,40.3,+4.1,51.6,33.2,official TSRBench leaderboard row
+GPT-5-mini (T+V),Proprietary,46.9,34.7,-1.4,50.6,32.0,official TSRBench leaderboard row
+o4-mini (V),Proprietary,46.6,38.3,+2.1,46.4,36.1,official TSRBench leaderboard row
+GPT-5-mini (T),Proprietary,46.6,39.9,+3.8,52.3,32.9,official TSRBench leaderboard row
+Gemini-2.5-Flash (T+V),Proprietary,46.5,40.8,+4.6,44.1,42.0,official TSRBench leaderboard row
+GPT-5-mini (V),Proprietary,46.0,37.4,+1.2,48.8,27.1,official TSRBench leaderboard row
+DeepSeek-V-3.2 (T),Proprietary,39.1,32.9,-3.2,36.6,30.7,official TSRBench leaderboard row
+Claude-4.5-Haiku (T+V),Proprietary,37.1,35.5,-0.6,43.1,23.1,official TSRBench leaderboard row
