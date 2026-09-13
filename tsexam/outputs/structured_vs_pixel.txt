@@ -1,0 +1,53 @@
+============================================================================================
+STRUCTURED vs RAW-PIXEL  —  TSExam vision-fired subset (Track-V; MEASUREMENT ONLY)
+============================================================================================
+common ids across 3 arms          : 746
+vision-FIRED subset (structured)  : 568
+
+net_val = P(arm correct) - P(vision_off correct)  [accuracy of LOOKING]
+syc     = among discordant rows where the LOOK is WRONG, fraction where pred FOLLOWS the look
+* / X   = net_val significant gain / loss (McNemar p<0.05, n>=8)
+
+-- STRUCTURED (SVI: JSON topology) vs vision_off ---------------
+branch         n_fired  P(math)   P(arm)  net_val            95% CI     b/c    McN p  syc_n     syc
+---------------------------------------------------------------------------------------------------
+noise              145    0.628    0.586   -0.041   [-0.145,+0.062]   33/27   0.5190     55   0.600
+similarity         139    0.633    0.683   +0.050   [-0.036,+0.137]   17/24   0.3489     38   0.447
+periodicity        117    0.538    0.786   +0.248   [+0.154,+0.342]    6/35   0.0000     12   0.917 *
+trend               91    0.604    0.747   +0.143   [+0.044,+0.253]    6/19   0.0146     10   0.700 *
+anomaly             65    0.462    0.477   +0.015   [-0.108,+0.138]     7/8   1.0000     15   0.933
+causality           11    0.909    0.909   +0.000   [+0.000,+0.000]     0/0   1.0000      1   0.000
+---------------------------------------------------------------------------------------------------
+OVERALL            568    0.593    0.671   +0.077   [+0.032,+0.123]  69/113   0.0014    131   0.626 *
+
+-- RAW_PIXEL (SVI-violating: raw PNG) vs vision_off ------------
+branch         n_fired  P(math)   P(arm)  net_val            95% CI     b/c    McN p  syc_n     syc
+---------------------------------------------------------------------------------------------------
+noise              145    0.628    0.690   +0.062   [-0.034,+0.166]   24/33   0.2892     50   0.480
+similarity         139    0.633    0.698   +0.065   [-0.022,+0.151]   15/24   0.1996     32   0.469
+periodicity        117    0.538    0.786   +0.248   [+0.154,+0.350]    6/35   0.0000     12   1.000 *
+trend               91    0.604    0.703   +0.099   [-0.011,+0.209]    8/17   0.1078     15   0.733
+anomaly             65    0.462    0.477   +0.015   [-0.123,+0.138]    9/10   1.0000     12   1.000
+causality           11    0.909    0.909   +0.000   [+0.000,+0.000]     0/0   1.0000      1   0.000
+---------------------------------------------------------------------------------------------------
+OVERALL            568    0.593    0.694   +0.100   [+0.055,+0.146]  62/119   0.0000    122   0.607 *
+
+============================================================================================
+HEAD-TO-HEAD (per branch): structured net_val/syc vs raw_pixel net_val/syc
+============================================================================================
+branch             n    S_net    P_net  net_diff   S_syc   P_syc  syc_diff
+--------------------------------------------------------------------------
+noise            145   -0.041   +0.062    +0.103   0.600   0.480    -0.120
+similarity       139   +0.050   +0.065    +0.014   0.447   0.469    +0.021
+periodicity      117   +0.248   +0.248    +0.000   0.917   1.000    +0.083
+trend             91   +0.143   +0.099    -0.044   0.700   0.733    +0.033
+anomaly           65   +0.015   +0.015    +0.000   0.933   1.000    +0.067
+causality         11   +0.000   +0.000    +0.000   0.000   0.000    +0.000
+--------------------------------------------------------------------------
+OVERALL          568   +0.077   +0.100    +0.023   0.626   0.607    -0.019
+
+net_diff = raw_pixel - structured (net_value); >0 ⇒ pixels add ceiling.
+syc_diff = raw_pixel - structured (sycophancy); >0 ⇒ pixels more sycophantic.
+
+VERDICT RULE: SVI VALIDATED if structured net_val >= raw_pixel AND structured syc <= raw_pixel.
+              SVI BOUNDED if raw_pixel net_val wins on shape/anomaly branches (a measurable multimodal tax).

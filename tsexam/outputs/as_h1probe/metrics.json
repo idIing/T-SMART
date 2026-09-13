@@ -1,0 +1,77 @@
+{
+  "macro_oa": 0.4067,
+  "micro_oa": 0.4067,
+  "n": 150,
+  "per_category": {
+    "PR": {
+      "acc": 0.4,
+      "correct": 12,
+      "total": 30,
+      "ci": [
+        0.2459,
+        0.5768
+      ]
+    },
+    "NU": {
+      "acc": 0.4667,
+      "correct": 14,
+      "total": 30,
+      "ci": [
+        0.3023,
+        0.6386
+      ]
+    },
+    "AD": {
+      "acc": 0.2333,
+      "correct": 7,
+      "total": 30,
+      "ci": [
+        0.1179,
+        0.4093
+      ]
+    },
+    "SA": {
+      "acc": 0.4,
+      "correct": 12,
+      "total": 30,
+      "ci": [
+        0.2459,
+        0.5768
+      ]
+    },
+    "CA": {
+      "acc": 0.5333,
+      "correct": 16,
+      "total": 30,
+      "ci": [
+        0.3614,
+        0.6977
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.5867,
+  "vision_rate": 0.2933,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 2390.1,
+  "sec_per_row": 15.93,
+  "config": {
+    "loop_mode": "propose",
+    "loop_branches": [
+      "anomaly"
+    ],
+    "max_loop_depth": 2,
+    "quality_threshold": 0.65
+  },
+  "tag": "as_h1probe",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "tokens": {
+    "total_tokens": 919772,
+    "prompt_tokens": 906895,
+    "completion_tokens": 12877,
+    "calls": 303
+  },
+  "timestamp": "2026-06-23T15:47:25.484040"
+}

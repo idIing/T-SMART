@@ -1,0 +1,66 @@
+{
+  "macro_oa": 0.4169,
+  "micro_oa": 0.4129,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.4061,
+      "correct": 147,
+      "total": 362,
+      "ci": [
+        0.3567,
+        0.4574
+      ]
+    },
+    "NU": {
+      "acc": 0.4643,
+      "correct": 39,
+      "total": 84,
+      "ci": [
+        0.3615,
+        0.5702
+      ]
+    },
+    "AD": {
+      "acc": 0.3611,
+      "correct": 39,
+      "total": 108,
+      "ci": [
+        0.2767,
+        0.455
+      ]
+    },
+    "SA": {
+      "acc": 0.45,
+      "correct": 54,
+      "total": 120,
+      "ci": [
+        0.3639,
+        0.5392
+      ]
+    },
+    "CA": {
+      "acc": 0.4028,
+      "correct": 29,
+      "total": 72,
+      "ci": [
+        0.2972,
+        0.5182
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0,
+  "vision_rate": 0.0,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 57.3,
+  "sec_per_row": 0.08,
+  "config": {
+    "llm_only": true
+  },
+  "tag": "c1_gpt4o_llmonly",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "timestamp": "2026-06-22T03:46:01.483189"
+}

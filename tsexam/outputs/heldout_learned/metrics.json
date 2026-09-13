@@ -1,0 +1,66 @@
+{
+  "macro_oa": 0.6681,
+  "micro_oa": 0.6944,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7624,
+      "correct": 276,
+      "total": 362,
+      "ci": [
+        0.716,
+        0.8034
+      ]
+    },
+    "NU": {
+      "acc": 0.6429,
+      "correct": 54,
+      "total": 84,
+      "ci": [
+        0.5362,
+        0.737
+      ]
+    },
+    "AD": {
+      "acc": 0.5185,
+      "correct": 56,
+      "total": 108,
+      "ci": [
+        0.4253,
+        0.6105
+      ]
+    },
+    "SA": {
+      "acc": 0.625,
+      "correct": 75,
+      "total": 120,
+      "ci": [
+        0.5358,
+        0.7065
+      ]
+    },
+    "CA": {
+      "acc": 0.7917,
+      "correct": 57,
+      "total": 72,
+      "ci": [
+        0.6843,
+        0.8695
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.2788,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 534.1,
+  "sec_per_row": 0.72,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false,
+    "vision_gate": "learned"
+  },
+  "tag": "heldout_learned",
+  "timestamp": "2026-06-20T23:37:32.436789"
+}

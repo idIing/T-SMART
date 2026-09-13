@@ -1,0 +1,65 @@
+{
+  "macro_oa": 0.6552,
+  "micro_oa": 0.6823,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7348,
+      "correct": 266,
+      "total": 362,
+      "ci": [
+        0.687,
+        0.7776
+      ]
+    },
+    "NU": {
+      "acc": 0.5595,
+      "correct": 47,
+      "total": 84,
+      "ci": [
+        0.4531,
+        0.6608
+      ]
+    },
+    "AD": {
+      "acc": 0.537,
+      "correct": 58,
+      "total": 108,
+      "ci": [
+        0.4433,
+        0.6282
+      ]
+    },
+    "SA": {
+      "acc": 0.7083,
+      "correct": 85,
+      "total": 120,
+      "ci": [
+        0.6216,
+        0.7822
+      ]
+    },
+    "CA": {
+      "acc": 0.7361,
+      "correct": 53,
+      "total": 72,
+      "ci": [
+        0.6242,
+        0.8241
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.7614,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 537.2,
+  "sec_per_row": 0.72,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false
+  },
+  "tag": "heldout_additive",
+  "timestamp": "2026-06-20T22:58:55.281100"
+}

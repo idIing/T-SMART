@@ -1,0 +1,65 @@
+{
+  "macro_oa": 0.62,
+  "micro_oa": 0.62,
+  "n": 150,
+  "per_category": {
+    "PR": {
+      "acc": 0.8,
+      "correct": 24,
+      "total": 30,
+      "ci": [
+        0.6269,
+        0.905
+      ]
+    },
+    "NU": {
+      "acc": 0.4667,
+      "correct": 14,
+      "total": 30,
+      "ci": [
+        0.3023,
+        0.6386
+      ]
+    },
+    "AD": {
+      "acc": 0.3333,
+      "correct": 10,
+      "total": 30,
+      "ci": [
+        0.1923,
+        0.5122
+      ]
+    },
+    "SA": {
+      "acc": 0.7667,
+      "correct": 23,
+      "total": 30,
+      "ci": [
+        0.5907,
+        0.8821
+      ]
+    },
+    "CA": {
+      "acc": 0.7333,
+      "correct": 22,
+      "total": 30,
+      "ci": [
+        0.5555,
+        0.8582
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0133,
+  "vision_rate": 0.7667,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 1564.5,
+  "sec_per_row": 10.43,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false
+  },
+  "tag": "baseline",
+  "timestamp": "2026-06-18T16:52:40.802879"
+}

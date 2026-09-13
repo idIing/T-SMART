@@ -1,0 +1,105 @@
+{
+  "macro_oa": 0.6749,
+  "micro_oa": 0.6903,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7348,
+      "correct": 266,
+      "total": 362,
+      "ci": [
+        0.687,
+        0.7776
+      ]
+    },
+    "NU": {
+      "acc": 0.6667,
+      "correct": 56,
+      "total": 84,
+      "ci": [
+        0.5605,
+        0.7582
+      ]
+    },
+    "AD": {
+      "acc": 0.537,
+      "correct": 58,
+      "total": 108,
+      "ci": [
+        0.4433,
+        0.6282
+      ]
+    },
+    "SA": {
+      "acc": 0.6583,
+      "correct": 79,
+      "total": 120,
+      "ci": [
+        0.5697,
+        0.7371
+      ]
+    },
+    "CA": {
+      "acc": 0.7778,
+      "correct": 56,
+      "total": 72,
+      "ci": [
+        0.6691,
+        0.8583
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.7614,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 506.3,
+  "sec_per_row": 0.68,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false,
+    "raw_pixel_vision": true
+  },
+  "tag": "raw_pixel_final",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "timestamp": "2026-06-24T06:06:03.043533",
+  "provenance": {
+    "timestamp_utc": "2026-06-24T13:06:03.043995+00:00",
+    "git_commit": "d37128f31aafc9337af0ad6aa6c7a2dcddcdd5bd",
+    "git_branch": "worktree-clean-main",
+    "git_dirty": true,
+    "argv": [
+      "tsexam/run_eval.py",
+      "--config",
+      "raw_pixel_vision",
+      "--full",
+      "--tag",
+      "raw_pixel_final",
+      "--max-workers",
+      "16"
+    ],
+    "cwd": ".",
+    "python": "3.12.3",
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "hostname": null,
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "statsmodels": "0.14.6",
+      "google-genai": "2.8.0",
+      "ruptures": "1.1.10",
+      "openai": "2.43.0",
+      "python-dotenv": "1.2.2"
+    },
+    "tsqa_package_path": "tsqa/tsqa",
+    "dataset": {
+      "benchmark": "TimeSeriesExam",
+      "n_rows": 746,
+      "seed": 42,
+      "full": true,
+      "n_per_cat": 30
+    }
+  }
+}

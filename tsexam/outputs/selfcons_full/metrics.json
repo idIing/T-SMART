@@ -1,0 +1,65 @@
+{
+  "macro_oa": 0.642,
+  "micro_oa": 0.6689,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.721,
+      "correct": 261,
+      "total": 362,
+      "ci": [
+        0.6727,
+        0.7647
+      ]
+    },
+    "NU": {
+      "acc": 0.5714,
+      "correct": 48,
+      "total": 84,
+      "ci": [
+        0.4648,
+        0.6718
+      ]
+    },
+    "AD": {
+      "acc": 0.5093,
+      "correct": 55,
+      "total": 108,
+      "ci": [
+        0.4163,
+        0.6016
+      ]
+    },
+    "SA": {
+      "acc": 0.7,
+      "correct": 84,
+      "total": 120,
+      "ci": [
+        0.6128,
+        0.7747
+      ]
+    },
+    "CA": {
+      "acc": 0.7083,
+      "correct": 51,
+      "total": 72,
+      "ci": [
+        0.5949,
+        0.8006
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.7601,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 639.5,
+  "sec_per_row": 0.86,
+  "config": {
+    "self_consistency": 5,
+    "self_consistency_temperature": 0.7
+  },
+  "tag": "selfcons_full",
+  "timestamp": "2026-06-22T02:59:53.447976"
+}

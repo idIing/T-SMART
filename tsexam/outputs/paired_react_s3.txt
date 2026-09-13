@@ -1,0 +1,76 @@
+============================================================================================
+PAIRED TSExam DIFF  research/outputs/baseline_full  vs  research/outputs/react_s3_full   (treat - base)
+============================================================================================
+paired rows: 746   initial-router-branch disagreement: 0.5%   (* sig gain, X sig loss; p<0.05 exact McNemar)
+
+stratum               n    base   treat       Δ            95% CI      b/c McNemar p
+--------------------------------------------------------------------------------------------
+OVERALL             746   0.682   0.676  -0.007  [-0.023,+0.009]    20/15    0.4996
+
+-- by category -----------------------------------------------------------------------------
+stratum               n    base   treat       Δ            95% CI      b/c McNemar p
+--------------------------------------------------------------------------------------------
+PR                  362   0.735   0.727  -0.008  [-0.028,+0.011]      8/5    0.5811
+SA                  120   0.700   0.700  +0.000  [-0.042,+0.042]      3/3    1.0000
+AD                  108   0.537   0.537  +0.000  [-0.046,+0.046]      3/3    1.0000
+NU                   84   0.571   0.571  +0.000  [-0.071,+0.071]      4/4    1.0000
+CA                   72   0.736   0.708  -0.028  [-0.069,+0.000]      2/0    0.5000
+
+-- by initial_branch_used (MECHANISM VIEW, Holm-corrected) ---------------------------------
+stratum               n    base   treat       Δ            95% CI      b/c McNemar p    Holm p
+------------------------------------------------------------------------------------------------------
+noise               186   0.565   0.570  +0.005  [-0.032,+0.043]      5/6    1.0000    1.0000
+similarity          162   0.660   0.660  +0.000  [-0.025,+0.025]      2/2    1.0000    1.0000
+periodicity         156   0.763   0.769  +0.006  [-0.019,+0.032]      2/3    1.0000    1.0000
+trend               126   0.825   0.770  -0.056  [-0.103,-0.016]      8/1    0.0391    0.2734
+anomaly              82   0.524   0.524  +0.000  [-0.061,+0.061]      3/3    1.0000    1.0000
+causality            30   0.933   0.933  +0.000  [+0.000,+0.000]      0/0    1.0000    1.0000
+None                  4   0.750   0.750  +0.000  [+0.000,+0.000]      0/0    1.0000    1.0000
+
+-- branch migration initial->final (treatment), 4/746 rows moved ------------------
+  noise            -> noise:186, None:4
+
+-- cluster bootstrap sensitivity ---------------------------------------------------------
+category           n=746   Δ=-0.007 CI=[-0.014,+0.000] leave-one Δ range=[-0.008,-0.004]
+initial_branch_used n=746   Δ=-0.007 CI=[-0.029,+0.005] leave-one Δ range=[-0.011,+0.003]
+
+vision fired: base 568/746 (76.1%)  ->  treat 583/746 (78.2%)
+============================================================================================
+paired rows: 746
+
+== FIRE RATES ==
+GATE fired (quality<0.55):     129/746 (17.3%)
+PROPOSAL made (LLM called):    129/746 (17.3%)
+ACTION executed (>=1):         120/746 (16.1%)
+FALLBACK-only (no exec):       9/746
+propose_fired flag:            120/746
+
+== BUDGET ADHERENCE (cap: <=2 executed, <=2 proposal calls/row) ==
+max executed actions/row:  2  (OK if <=2)
+max proposal steps/row:    2  (OK if <=2)
+rows over budget:          0
+
+== PROPOSED action distribution (over the closed registry) ==
+  proposed vision          83   executed 83
+  proposed anomaly         66   executed 66
+  proposed trend           43   executed 43
+  proposed periodicity     24   executed 24
+  proposed noise           15   executed 15
+  proposed numeric_head     9   executed 0
+  proposed causality        9   executed 9
+
+== FALLBACK reasons ==
+  numeric_head_unavailable_on_mcq          9
+  toplevel_numeric_head_unavailable_on_mcq 9
+
+== ACTION-EXECUTED-ROW DISCORDANCE (the headline) ==
+  action-executed        n=120  corrected=6 broken=8 unchanged=106 net=-2
+  gated-but-no-action    n=9    corrected=0 broken=0 unchanged=9 net=+0
+  non-gated              n=617  corrected=9 broken=12 unchanged=596 net=-3
+
+OA base=0.6823  treat=0.6756  Δ=-0.0067
+
+== action-executed rows by initial route ==
+  trend          57
+  periodicity    36
+  anomaly        27

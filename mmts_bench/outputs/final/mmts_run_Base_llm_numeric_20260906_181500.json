@@ -1,0 +1,95 @@
+{
+  "benchmark": "MMTS-Bench",
+  "subset": "Base",
+  "config": "llm_numeric",
+  "vision_kwargs": {
+    "llm_numeric": true
+  },
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "scoring": {
+    "numeric_rel_tol": 0.1,
+    "mcq_only": false
+  },
+  "seed": 42,
+  "n_rows": 700,
+  "overall": {
+    "correct": 313,
+    "total": 700,
+    "accuracy_pct": 44.71
+  },
+  "per_category": {
+    "basic analysis": {
+      "correct": 139,
+      "total": 200,
+      "accuracy_pct": 69.5
+    },
+    "index": {
+      "correct": 31,
+      "total": 100,
+      "accuracy_pct": 31.0
+    },
+    "noise analysis": {
+      "correct": 27,
+      "total": 100,
+      "accuracy_pct": 27.0
+    },
+    "seasonality analysis": {
+      "correct": 19,
+      "total": 100,
+      "accuracy_pct": 19.0
+    },
+    "stationarity": {
+      "correct": 64,
+      "total": 100,
+      "accuracy_pct": 64.0
+    },
+    "trend analysis": {
+      "correct": 33,
+      "total": 100,
+      "accuracy_pct": 33.0
+    }
+  },
+  "files": {
+    "detail_csv": "mmts_results_Base_llm_numeric_20260906_181500.csv",
+    "accuracy_csv": "mmts_accuracy_Base_llm_numeric_20260906_181500.csv",
+    "latex": "mmts_latex_Base_llm_numeric_20260906_181500.tex"
+  },
+  "provenance": {
+    "timestamp_utc": "2026-09-07T01:15:00.156172+00:00",
+    "git_commit": "98be9a994c5104e6b5a6876e8a105958fcce4dad",
+    "git_branch": "chore/public-release-cleanup",
+    "git_dirty": true,
+    "argv": [
+      "mmts_bench/scripts/run_mmts_baseline.py",
+      "--subset",
+      "Base",
+      "--config",
+      "llm_numeric",
+      "--output-dir",
+      "mmts_bench/outputs/final",
+      "--max-workers",
+      "16"
+    ],
+    "cwd": ".",
+    "python": "3.13.5",
+    "platform": "Linux-7.1.13-200.fc44.x86_64-x86_64-with-glibc2.41",
+    "hostname": null,
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0",
+      "google-genai": "2.22.0",
+      "ruptures": "1.1.10",
+      "openai": null,
+      "python-dotenv": "1.2.3"
+    },
+    "tsqa_package_path": "tsqa/tsqa"
+  },
+  "usage": {
+    "total_tokens": 2882356,
+    "prompt_tokens": 2858528,
+    "completion_tokens": 23828,
+    "calls": 700
+  }
+}

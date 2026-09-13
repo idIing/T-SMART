@@ -1,0 +1,65 @@
+{
+  "macro_oa": 0.65,
+  "micro_oa": 0.65,
+  "n": 20,
+  "per_category": {
+    "PR": {
+      "acc": 1.0,
+      "correct": 4,
+      "total": 4,
+      "ci": [
+        0.5101,
+        1.0
+      ]
+    },
+    "NU": {
+      "acc": 0.75,
+      "correct": 3,
+      "total": 4,
+      "ci": [
+        0.3006,
+        0.9544
+      ]
+    },
+    "AD": {
+      "acc": 0.25,
+      "correct": 1,
+      "total": 4,
+      "ci": [
+        0.0456,
+        0.6994
+      ]
+    },
+    "SA": {
+      "acc": 1.0,
+      "correct": 4,
+      "total": 4,
+      "ci": [
+        0.5101,
+        1.0
+      ]
+    },
+    "CA": {
+      "acc": 0.25,
+      "correct": 1,
+      "total": 4,
+      "ci": [
+        0.0456,
+        0.6994
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0,
+  "vision_rate": 0.7,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 15.7,
+  "sec_per_row": 0.78,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false
+  },
+  "tag": "smoke_par",
+  "timestamp": "2026-06-18T22:11:28.482843"
+}

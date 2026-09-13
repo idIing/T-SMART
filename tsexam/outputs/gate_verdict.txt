@@ -1,0 +1,25 @@
+======================================================================================
+LEARNED-GATE VERDICT (held-out)   additive=tsexam/outputs/baseline_final  learned=tsexam/outputs/learned_gate_final
+======================================================================================
+paired rows: 746   temp-0 routing drift: 0.00%
+
+OA: additive 0.6729  ->  learned 0.6783   ΔOA +0.0054  CI [-0.0241,+0.0349]  McNemar p=0.7910  (b/c 62/66)
+look-rate: additive 568/746 (76.1%)  ->  learned 208/746 (27.9%)   Δ -48.3% (360 fewer looks)
+
+-- per branch_used (H2 guardrail) ----------------------------------------------------
+branch            n     add   learn       Δ              95% CI        p
+noise           186   0.581   0.613  +0.032  [-0.054,+0.118]    0.539
+similarity      162   0.660   0.623  -0.037  [-0.111,+0.037]    0.430  (neg, n.s.)
+periodicity     156   0.750   0.763  +0.013  [+0.000,+0.032]    0.500
+trend           126   0.770   0.802  +0.032  [+0.008,+0.063]    0.125
+anomaly          82   0.512   0.488  -0.024  [-0.122,+0.073]    0.804  (neg, n.s.)
+causality        30   0.933   0.933  +0.000  [+0.000,+0.000]    1.000
+None              4   0.750   0.750  +0.000  [+0.000,+0.000]    1.000
+
+======================================================================================
+PRE-REGISTERED VERDICT
+--------------------------------------------------------------------------------------
+H1 (primary): ΔOA CI lower bound ≥ -0.005?  -0.0241 -> NO    |    look-rate strictly lower?  YES  (568->208)
+     => H1 FAIL  (non-inferior OA at a strictly lower look-rate)
+H2 (guardrail): no significant per-branch regression?  YES -> PASS
+======================================================================================

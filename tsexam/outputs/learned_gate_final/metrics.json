@@ -1,0 +1,105 @@
+{
+  "macro_oa": 0.6451,
+  "micro_oa": 0.6783,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7597,
+      "correct": 275,
+      "total": 362,
+      "ci": [
+        0.7131,
+        0.8008
+      ]
+    },
+    "NU": {
+      "acc": 0.5595,
+      "correct": 47,
+      "total": 84,
+      "ci": [
+        0.4531,
+        0.6608
+      ]
+    },
+    "AD": {
+      "acc": 0.5093,
+      "correct": 55,
+      "total": 108,
+      "ci": [
+        0.4163,
+        0.6016
+      ]
+    },
+    "SA": {
+      "acc": 0.5917,
+      "correct": 71,
+      "total": 120,
+      "ci": [
+        0.5022,
+        0.6754
+      ]
+    },
+    "CA": {
+      "acc": 0.8056,
+      "correct": 58,
+      "total": 72,
+      "ci": [
+        0.6997,
+        0.8805
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.2788,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 510.0,
+  "sec_per_row": 0.68,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false,
+    "vision_gate": "learned"
+  },
+  "tag": "learned_gate_final",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "timestamp": "2026-06-24T06:14:50.945628",
+  "provenance": {
+    "timestamp_utc": "2026-06-24T13:14:50.946122+00:00",
+    "git_commit": "d37128f31aafc9337af0ad6aa6c7a2dcddcdd5bd",
+    "git_branch": "worktree-clean-main",
+    "git_dirty": true,
+    "argv": [
+      "tsexam/run_eval.py",
+      "--config",
+      "learned_gate",
+      "--full",
+      "--tag",
+      "learned_gate_final",
+      "--max-workers",
+      "16"
+    ],
+    "cwd": ".",
+    "python": "3.12.3",
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "hostname": null,
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "statsmodels": "0.14.6",
+      "google-genai": "2.8.0",
+      "ruptures": "1.1.10",
+      "openai": "2.43.0",
+      "python-dotenv": "1.2.2"
+    },
+    "tsqa_package_path": "tsqa/tsqa",
+    "dataset": {
+      "benchmark": "TimeSeriesExam",
+      "n_rows": 746,
+      "seed": 42,
+      "full": true,
+      "n_per_cat": 30
+    }
+  }
+}

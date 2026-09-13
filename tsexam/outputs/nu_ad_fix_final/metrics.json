@@ -1,0 +1,109 @@
+{
+  "macro_oa": 0.6747,
+  "micro_oa": 0.6997,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7431,
+      "correct": 269,
+      "total": 362,
+      "ci": [
+        0.6957,
+        0.7854
+      ]
+    },
+    "NU": {
+      "acc": 0.5833,
+      "correct": 49,
+      "total": 84,
+      "ci": [
+        0.4765,
+        0.6829
+      ]
+    },
+    "AD": {
+      "acc": 0.6389,
+      "correct": 69,
+      "total": 108,
+      "ci": [
+        0.545,
+        0.7233
+      ]
+    },
+    "SA": {
+      "acc": 0.7,
+      "correct": 84,
+      "total": 120,
+      "ci": [
+        0.6128,
+        0.7747
+      ]
+    },
+    "CA": {
+      "acc": 0.7083,
+      "correct": 51,
+      "total": 72,
+      "ci": [
+        0.5949,
+        0.8006
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.5898,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 515.7,
+  "sec_per_row": 0.69,
+  "config": {
+    "multi_branch": false,
+    "no_vision_branches": [
+      "noise"
+    ],
+    "forced_vision_branches": [
+      "anomaly"
+    ]
+  },
+  "tag": "nu_ad_fix_final",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "timestamp": "2026-06-24T05:23:29.989090",
+  "provenance": {
+    "timestamp_utc": "2026-06-24T12:23:29.989773+00:00",
+    "git_commit": "d37128f31aafc9337af0ad6aa6c7a2dcddcdd5bd",
+    "git_branch": "worktree-clean-main",
+    "git_dirty": true,
+    "argv": [
+      "tsexam/run_eval.py",
+      "--config",
+      "nu_ad_fix",
+      "--full",
+      "--tag",
+      "nu_ad_fix_final",
+      "--max-workers",
+      "16"
+    ],
+    "cwd": ".",
+    "python": "3.12.3",
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "hostname": null,
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "statsmodels": "0.14.6",
+      "google-genai": "2.8.0",
+      "ruptures": "1.1.10",
+      "openai": "2.43.0",
+      "python-dotenv": "1.2.2"
+    },
+    "tsqa_package_path": "tsqa/tsqa",
+    "dataset": {
+      "benchmark": "TimeSeriesExam",
+      "n_rows": 746,
+      "seed": 42,
+      "full": true,
+      "n_per_cat": 30
+    }
+  }
+}

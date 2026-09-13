@@ -1,0 +1,65 @@
+{
+  "macro_oa": 0.6,
+  "micro_oa": 0.6,
+  "n": 5,
+  "per_category": {
+    "PR": {
+      "acc": 1.0,
+      "correct": 1,
+      "total": 1,
+      "ci": [
+        0.2065,
+        1.0
+      ]
+    },
+    "NU": {
+      "acc": 1.0,
+      "correct": 1,
+      "total": 1,
+      "ci": [
+        0.2065,
+        1.0
+      ]
+    },
+    "AD": {
+      "acc": 0.0,
+      "correct": 0,
+      "total": 1,
+      "ci": [
+        0.0,
+        0.7935
+      ]
+    },
+    "SA": {
+      "acc": 1.0,
+      "correct": 1,
+      "total": 1,
+      "ci": [
+        0.2065,
+        1.0
+      ]
+    },
+    "CA": {
+      "acc": 0.0,
+      "correct": 0,
+      "total": 1,
+      "ci": [
+        0.0,
+        0.7935
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0,
+  "vision_rate": 0.8,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 51.4,
+  "sec_per_row": 10.29,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false
+  },
+  "tag": "smoke",
+  "timestamp": "2026-06-18T16:24:22.231670"
+}

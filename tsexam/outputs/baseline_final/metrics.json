@@ -1,0 +1,104 @@
+{
+  "macro_oa": 0.6499,
+  "micro_oa": 0.6729,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7182,
+      "correct": 260,
+      "total": 362,
+      "ci": [
+        0.6698,
+        0.7621
+      ]
+    },
+    "NU": {
+      "acc": 0.5952,
+      "correct": 50,
+      "total": 84,
+      "ci": [
+        0.4883,
+        0.6938
+      ]
+    },
+    "AD": {
+      "acc": 0.5278,
+      "correct": 57,
+      "total": 108,
+      "ci": [
+        0.4343,
+        0.6194
+      ]
+    },
+    "SA": {
+      "acc": 0.7,
+      "correct": 84,
+      "total": 120,
+      "ci": [
+        0.6128,
+        0.7747
+      ]
+    },
+    "CA": {
+      "acc": 0.7083,
+      "correct": 51,
+      "total": 72,
+      "ci": [
+        0.5949,
+        0.8006
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.7614,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 513.3,
+  "sec_per_row": 0.69,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false
+  },
+  "tag": "baseline_final",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "timestamp": "2026-06-24T05:14:41.623117",
+  "provenance": {
+    "timestamp_utc": "2026-06-24T12:14:41.623483+00:00",
+    "git_commit": "d37128f31aafc9337af0ad6aa6c7a2dcddcdd5bd",
+    "git_branch": "worktree-clean-main",
+    "git_dirty": true,
+    "argv": [
+      "tsexam/run_eval.py",
+      "--config",
+      "baseline",
+      "--full",
+      "--tag",
+      "baseline_final",
+      "--max-workers",
+      "16"
+    ],
+    "cwd": ".",
+    "python": "3.12.3",
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "hostname": null,
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "statsmodels": "0.14.6",
+      "google-genai": "2.8.0",
+      "ruptures": "1.1.10",
+      "openai": "2.43.0",
+      "python-dotenv": "1.2.2"
+    },
+    "tsqa_package_path": "tsqa/tsqa",
+    "dataset": {
+      "benchmark": "TimeSeriesExam",
+      "n_rows": 746,
+      "seed": 42,
+      "full": true,
+      "n_per_cat": 30
+    }
+  }
+}

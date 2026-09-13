@@ -1,0 +1,66 @@
+{
+  "macro_oa": 0.8,
+  "micro_oa": 0.8,
+  "n": 5,
+  "per_category": {
+    "PR": {
+      "acc": 1.0,
+      "correct": 1,
+      "total": 1,
+      "ci": [
+        0.2065,
+        1.0
+      ]
+    },
+    "NU": {
+      "acc": 1.0,
+      "correct": 1,
+      "total": 1,
+      "ci": [
+        0.2065,
+        1.0
+      ]
+    },
+    "AD": {
+      "acc": 0.0,
+      "correct": 0,
+      "total": 1,
+      "ci": [
+        0.0,
+        0.7935
+      ]
+    },
+    "SA": {
+      "acc": 1.0,
+      "correct": 1,
+      "total": 1,
+      "ci": [
+        0.2065,
+        1.0
+      ]
+    },
+    "CA": {
+      "acc": 1.0,
+      "correct": 1,
+      "total": 1,
+      "ci": [
+        0.2065,
+        1.0
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0,
+  "vision_rate": 0.2,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 7.9,
+  "sec_per_row": 1.58,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false,
+    "vision_gate": "learned"
+  },
+  "tag": "smoke_learned",
+  "timestamp": "2026-06-20T22:44:23.074114"
+}

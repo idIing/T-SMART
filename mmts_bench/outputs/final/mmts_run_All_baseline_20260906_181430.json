@@ -1,0 +1,273 @@
+{
+  "benchmark": "MMTS-Bench",
+  "subset": "All",
+  "config": "baseline",
+  "vision_kwargs": {},
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "scoring": {
+    "numeric_rel_tol": 0.1,
+    "mcq_only": false
+  },
+  "seed": 42,
+  "n_rows": 2424,
+  "overall": {
+    "correct": 1358,
+    "total": 2424,
+    "accuracy_pct": 56.02
+  },
+  "per_category": {
+    "analogical reasoning": {
+      "correct": 16,
+      "total": 37,
+      "accuracy_pct": 43.24
+    },
+    "basic analysis": {
+      "correct": 240,
+      "total": 275,
+      "accuracy_pct": 87.27
+    },
+    "basic analysis, analogical reasoning": {
+      "correct": 8,
+      "total": 17,
+      "accuracy_pct": 47.06
+    },
+    "basic analysis, causal reasoning": {
+      "correct": 6,
+      "total": 15,
+      "accuracy_pct": 40.0
+    },
+    "basic analysis, counterfactual reasoning": {
+      "correct": 9,
+      "total": 20,
+      "accuracy_pct": 45.0
+    },
+    "basic analysis, deductive reasoning": {
+      "correct": 12,
+      "total": 34,
+      "accuracy_pct": 35.29
+    },
+    "basic analysis, inductive reasoning": {
+      "correct": 17,
+      "total": 31,
+      "accuracy_pct": 54.84
+    },
+    "caption": {
+      "correct": 80,
+      "total": 240,
+      "accuracy_pct": 33.33
+    },
+    "causal reasoning": {
+      "correct": 26,
+      "total": 41,
+      "accuracy_pct": 63.41
+    },
+    "choose it": {
+      "correct": 95,
+      "total": 100,
+      "accuracy_pct": 95.0
+    },
+    "counterfactual reasoning": {
+      "correct": 13,
+      "total": 27,
+      "accuracy_pct": 48.15
+    },
+    "deductive reasoning": {
+      "correct": 14,
+      "total": 36,
+      "accuracy_pct": 38.89
+    },
+    "find it": {
+      "correct": 32,
+      "total": 100,
+      "accuracy_pct": 32.0
+    },
+    "index": {
+      "correct": 65,
+      "total": 100,
+      "accuracy_pct": 65.0
+    },
+    "inductive reasoning": {
+      "correct": 21,
+      "total": 45,
+      "accuracy_pct": 46.67
+    },
+    "noise analysis": {
+      "correct": 61,
+      "total": 146,
+      "accuracy_pct": 41.78
+    },
+    "noise analysis, analogical reasoning": {
+      "correct": 11,
+      "total": 21,
+      "accuracy_pct": 52.38
+    },
+    "noise analysis, causal reasoning": {
+      "correct": 8,
+      "total": 15,
+      "accuracy_pct": 53.33
+    },
+    "noise analysis, counterfactual reasoning": {
+      "correct": 5,
+      "total": 12,
+      "accuracy_pct": 41.67
+    },
+    "noise analysis, deductive reasoning": {
+      "correct": 13,
+      "total": 32,
+      "accuracy_pct": 40.62
+    },
+    "noise analysis, inductive reasoning": {
+      "correct": 9,
+      "total": 22,
+      "accuracy_pct": 40.91
+    },
+    "reverse it": {
+      "correct": 24,
+      "total": 100,
+      "accuracy_pct": 24.0
+    },
+    "seasonality analysis": {
+      "correct": 98,
+      "total": 158,
+      "accuracy_pct": 62.03
+    },
+    "seasonality analysis, analogical reasoning": {
+      "correct": 7,
+      "total": 17,
+      "accuracy_pct": 41.18
+    },
+    "seasonality analysis, causal reasoning": {
+      "correct": 11,
+      "total": 18,
+      "accuracy_pct": 61.11
+    },
+    "seasonality analysis, counterfactual reasoning": {
+      "correct": 8,
+      "total": 18,
+      "accuracy_pct": 44.44
+    },
+    "seasonality analysis, deductive reasoning": {
+      "correct": 13,
+      "total": 26,
+      "accuracy_pct": 50.0
+    },
+    "seasonality analysis, inductive reasoning": {
+      "correct": 10,
+      "total": 27,
+      "accuracy_pct": 37.04
+    },
+    "smooth it": {
+      "correct": 82,
+      "total": 100,
+      "accuracy_pct": 82.0
+    },
+    "stationarity": {
+      "correct": 100,
+      "total": 100,
+      "accuracy_pct": 100.0
+    },
+    "trend analysis": {
+      "correct": 91,
+      "total": 171,
+      "accuracy_pct": 53.22
+    },
+    "trend analysis, analogical reasoning": {
+      "correct": 12,
+      "total": 34,
+      "accuracy_pct": 35.29
+    },
+    "trend analysis, causal reasoning": {
+      "correct": 12,
+      "total": 20,
+      "accuracy_pct": 60.0
+    },
+    "trend analysis, counterfactual reasoning": {
+      "correct": 11,
+      "total": 22,
+      "accuracy_pct": 50.0
+    },
+    "trend analysis, deductive reasoning": {
+      "correct": 18,
+      "total": 29,
+      "accuracy_pct": 62.07
+    },
+    "trend analysis, inductive reasoning": {
+      "correct": 16,
+      "total": 35,
+      "accuracy_pct": 45.71
+    },
+    "volatility analysis": {
+      "correct": 33,
+      "total": 71,
+      "accuracy_pct": 46.48
+    },
+    "volatility analysis, analogical reasoning": {
+      "correct": 12,
+      "total": 25,
+      "accuracy_pct": 48.0
+    },
+    "volatility analysis, causal reasoning": {
+      "correct": 10,
+      "total": 20,
+      "accuracy_pct": 50.0
+    },
+    "volatility analysis, counterfactual reasoning": {
+      "correct": 2,
+      "total": 10,
+      "accuracy_pct": 20.0
+    },
+    "volatility analysis, deductive reasoning": {
+      "correct": 18,
+      "total": 37,
+      "accuracy_pct": 48.65
+    },
+    "volatility analysis, inductive reasoning": {
+      "correct": 9,
+      "total": 20,
+      "accuracy_pct": 45.0
+    }
+  },
+  "files": {
+    "detail_csv": "mmts_results_All_baseline_20260906_181430.csv",
+    "accuracy_csv": "mmts_accuracy_All_baseline_20260906_181430.csv",
+    "latex": "mmts_latex_All_baseline_20260906_181430.tex"
+  },
+  "provenance": {
+    "timestamp_utc": "2026-09-07T01:14:30.976726+00:00",
+    "git_commit": "98be9a994c5104e6b5a6876e8a105958fcce4dad",
+    "git_branch": "chore/public-release-cleanup",
+    "git_dirty": true,
+    "argv": [
+      "mmts_bench/scripts/run_mmts_baseline.py",
+      "--subset",
+      "All",
+      "--config",
+      "baseline",
+      "--output-dir",
+      "mmts_bench/outputs/final",
+      "--max-workers",
+      "16"
+    ],
+    "cwd": ".",
+    "python": "3.13.5",
+    "platform": "Linux-7.1.13-200.fc44.x86_64-x86_64-with-glibc2.41",
+    "hostname": null,
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0",
+      "google-genai": "2.22.0",
+      "ruptures": "1.1.10",
+      "openai": null,
+      "python-dotenv": "1.2.3"
+    },
+    "tsqa_package_path": "tsqa/tsqa"
+  },
+  "usage": {
+    "total_tokens": 8240443,
+    "prompt_tokens": 7885785,
+    "completion_tokens": 354658,
+    "calls": 6117
+  }
+}

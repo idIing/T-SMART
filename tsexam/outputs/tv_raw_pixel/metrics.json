@@ -1,0 +1,68 @@
+{
+  "macro_oa": 0.6749,
+  "micro_oa": 0.6903,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7348,
+      "correct": 266,
+      "total": 362,
+      "ci": [
+        0.687,
+        0.7776
+      ]
+    },
+    "NU": {
+      "acc": 0.6667,
+      "correct": 56,
+      "total": 84,
+      "ci": [
+        0.5605,
+        0.7582
+      ]
+    },
+    "AD": {
+      "acc": 0.537,
+      "correct": 58,
+      "total": 108,
+      "ci": [
+        0.4433,
+        0.6282
+      ]
+    },
+    "SA": {
+      "acc": 0.6583,
+      "correct": 79,
+      "total": 120,
+      "ci": [
+        0.5697,
+        0.7371
+      ]
+    },
+    "CA": {
+      "acc": 0.7778,
+      "correct": 56,
+      "total": 72,
+      "ci": [
+        0.6691,
+        0.8583
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.7614,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 672.4,
+  "sec_per_row": 0.9,
+  "config": {
+    "multi_branch": false,
+    "enable_sa_vision": false,
+    "raw_pixel_vision": true
+  },
+  "tag": "tv_raw_pixel",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "timestamp": "2026-06-22T05:33:47.317689"
+}

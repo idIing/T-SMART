@@ -1,0 +1,76 @@
+{
+  "macro_oa": 0.6487,
+  "micro_oa": 0.6756,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.7265,
+      "correct": 263,
+      "total": 362,
+      "ci": [
+        0.6784,
+        0.7699
+      ]
+    },
+    "NU": {
+      "acc": 0.5714,
+      "correct": 48,
+      "total": 84,
+      "ci": [
+        0.4648,
+        0.6718
+      ]
+    },
+    "AD": {
+      "acc": 0.537,
+      "correct": 58,
+      "total": 108,
+      "ci": [
+        0.4433,
+        0.6282
+      ]
+    },
+    "SA": {
+      "acc": 0.7,
+      "correct": 84,
+      "total": 120,
+      "ci": [
+        0.6128,
+        0.7747
+      ]
+    },
+    "CA": {
+      "acc": 0.7083,
+      "correct": 51,
+      "total": 72,
+      "ci": [
+        0.5949,
+        0.8006
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.7815,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 556.8,
+  "sec_per_row": 0.75,
+  "config": {
+    "loop_branches": [
+      "trend",
+      "periodicity",
+      "anomaly",
+      "noise",
+      "similarity",
+      "causality"
+    ],
+    "max_loop_depth": 2,
+    "loop_mode": "propose",
+    "quality_threshold": 0.55
+  },
+  "tag": "react_s3_full",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "timestamp": "2026-06-22T04:21:49.541586"
+}

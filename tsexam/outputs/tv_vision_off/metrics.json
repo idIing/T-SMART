@@ -1,0 +1,74 @@
+{
+  "macro_oa": 0.6258,
+  "micro_oa": 0.622,
+  "n": 746,
+  "per_category": {
+    "PR": {
+      "acc": 0.6354,
+      "correct": 230,
+      "total": 362,
+      "ci": [
+        0.5846,
+        0.6833
+      ]
+    },
+    "NU": {
+      "acc": 0.5833,
+      "correct": 49,
+      "total": 84,
+      "ci": [
+        0.4765,
+        0.6829
+      ]
+    },
+    "AD": {
+      "acc": 0.5185,
+      "correct": 56,
+      "total": 108,
+      "ci": [
+        0.4253,
+        0.6105
+      ]
+    },
+    "SA": {
+      "acc": 0.6,
+      "correct": 72,
+      "total": 120,
+      "ci": [
+        0.5106,
+        0.6832
+      ]
+    },
+    "CA": {
+      "acc": 0.7917,
+      "correct": 57,
+      "total": 72,
+      "ci": [
+        0.6843,
+        0.8695
+      ]
+    }
+  },
+  "errors": 0,
+  "fallback_rate": 0.0054,
+  "vision_rate": 0.0,
+  "multi_branch_rate": 0.0,
+  "critic_rate": 0.0,
+  "wall_sec": 630.0,
+  "sec_per_row": 0.84,
+  "config": {
+    "multi_branch": false,
+    "no_vision_branches": [
+      "trend",
+      "periodicity",
+      "anomaly",
+      "noise",
+      "similarity",
+      "causality"
+    ]
+  },
+  "tag": "tv_vision_off",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "timestamp": "2026-06-22T05:32:53.735238"
+}
