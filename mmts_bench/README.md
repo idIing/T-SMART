@@ -3,7 +3,7 @@
 Part of the [T-SMART](https://github.com/idIing/T-SMART) project —
 **T-SMART: Mechanism-Level Attribution for Tool-Augmented Time-Series Question Answering**.
 
-This module provides the evaluation infrastructure for [MMTS-Bench](https://huggingface.co/spaces/MMTS-Bench/MMTS-Bench-Explorer) — loading the dataset, comparing results against literature baselines, and running hardened math tools that never crash the eval loop.
+This module provides the evaluation infrastructure for [MMTS-Bench](https://arxiv.org/abs/2602.08588) — loading the dataset, comparing results against literature baselines, and running hardened math tools that never crash the eval loop.
 
 ---
 
