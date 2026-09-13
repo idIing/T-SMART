@@ -1,0 +1,85 @@
+{
+  "baseline_numeric_std": {
+    "branch_used": "trend",
+    "expected_schema": "numerical",
+    "flags": [
+      "low_r2"
+    ],
+    "numeric_note": "closed_form",
+    "numeric_quantity": "std",
+    "parse_success": true,
+    "predicted_letter": null,
+    "predicted_value": 1.867818,
+    "routing_branch": "trend",
+    "subtype_used": "direction",
+    "used_fallback": false,
+    "vision_letter": null,
+    "vision_used": false
+  },
+  "baseline_similarity": {
+    "branch_used": "similarity",
+    "expected_schema": "mcq",
+    "flags": [
+      "high_volatility"
+    ],
+    "numeric_note": null,
+    "numeric_quantity": null,
+    "parse_success": true,
+    "predicted_letter": "B",
+    "predicted_value": null,
+    "routing_branch": "similarity",
+    "subtype_used": "shape",
+    "used_fallback": false,
+    "vision_letter": "B",
+    "vision_used": true
+  },
+  "baseline_trend": {
+    "branch_used": "trend",
+    "expected_schema": "mcq",
+    "flags": [],
+    "numeric_note": null,
+    "numeric_quantity": null,
+    "parse_success": true,
+    "predicted_letter": "B",
+    "predicted_value": null,
+    "routing_branch": "trend",
+    "subtype_used": "direction",
+    "used_fallback": false,
+    "vision_letter": null,
+    "vision_used": false
+  },
+  "nu_ad_fix_anomaly": {
+    "branch_used": "anomaly",
+    "expected_schema": "mcq",
+    "flags": [
+      "high_volatility"
+    ],
+    "numeric_note": null,
+    "numeric_quantity": null,
+    "parse_success": true,
+    "predicted_letter": "B",
+    "predicted_value": null,
+    "routing_branch": "anomaly",
+    "subtype_used": "point_anomaly",
+    "used_fallback": false,
+    "vision_letter": "B",
+    "vision_used": true
+  },
+  "nu_ad_fix_noise": {
+    "branch_used": "noise",
+    "expected_schema": "mcq",
+    "flags": [
+      "adf_kpss_disagree"
+    ],
+    "numeric_note": null,
+    "numeric_quantity": null,
+    "parse_success": true,
+    "predicted_letter": "B",
+    "predicted_value": null,
+    "routing_branch": "noise",
+    "subtype_used": "stationarity",
+    "used_fallback": false,
+    "vision_letter": null,
+    "vision_used": false
+  }
+}

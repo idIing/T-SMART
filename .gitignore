@@ -1,0 +1,82 @@
+# Secrets: never track a .env anywhere in the tree
+.env
+**/.env
+time-series-qa-eval/.venv/
+tsqa/.venv/
+.venv/
+.TESTVENV/
+.tools/
+tlextras-*.tar
+tlextras-*.tar.index.gz
+.claude/
+.github/*
+!.github/workflows/
+!.github/workflows/test.yml
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*.class
+*.pyc
+
+# IDEs and OS files
+.DS_Store
+.vscode/
+
+# Build and logs
+*.log
+*.aux
+*.blg
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+eval_report*.txt
+
+# Offline TeX Live tarball and the local tectonic install, used for the local
+# paper build; the manuscript itself is not part of this repository.
+tlextras-*.tar*
+.tools/
+
+# Media / artifacts
+*.svg
+
+# Temp scripts
+verify_ddi.py
+fix_*.py
+
+# Build artifacts
+*.egg-info/
+
+# Ad-hoc eval run outputs (curated snapshots under outputs/ are committed explicitly)
+tsexam/outputs/.heldout_*
+tsexam/outputs/*_sweep/
+tsexam/outputs/health_*/
+tsexam/outputs/dbg_*/
+tsexam/outputs/*.runlog
+
+# Cloud-upload bundle (defunct; never commit)
+container_baselines.zip
+
+# The manuscript is published through IEEE, not redistributed here: neither the
+# LaTeX source, the figures, nor the typeset PDF is tracked. See README.md.
+ictai/
+ictai.zip
+
+# Heavy per-row eval logs (regenerable from the committed code; kept out of the repo)
+tsexam/outputs/*/results.json
+tsexam/outputs/*/failures.json
+
+# Ad-hoc MMTS detail CSVs. The curated All/baseline snapshot is exempted below:
+# make_paper_tables.py reads it to rebuild Table 2, so a fresh clone needs it.
+mmts_bench/outputs/final/mmts_results_*.csv
+!mmts_bench/outputs/final/mmts_results_All_baseline_*.csv
+
+# Citation PDFs and their extracted full text are not redistributed
+# (copyright); sources/ keeps only the verification notes, the two abstracts
+# the audit rests on, and the fetch manifests. See THIRD_PARTY_NOTICES.md.
+sources/*.pdf
+sources/text_*/
+
+# Ephemeral session handoffs (consumed once; not part of the record)
+docs/handoffs/

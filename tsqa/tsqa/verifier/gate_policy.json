@@ -1,0 +1,91 @@
+{
+  "version": "learned_gate_v1_2026-06-20",
+  "policy_type": "per_branch_suppression_filter_over_additive",
+  "fire_branches": [
+    "trend",
+    "periodicity"
+  ],
+  "suppress_branches": [
+    "noise",
+    "similarity",
+    "anomaly",
+    "causality"
+  ],
+  "threshold_tau": 0.0,
+  "estimator": "per-branch base rate of realized y; fire iff E[y|branch] > tau; tau selected by leave-one-subset-out CV (Base<->InWild)",
+  "label_definition": "y = int(vision_on_final == gold) - int(math_only_final == gold)",
+  "feature_set": "pre-look only: branch (dominant, LOSO sign-stable). vision_confidence EXCLUDED (post-look). subtype/flag refinements evaluated and REJECTED (see rejected_refinements).",
+  "per_branch_realized_y": {
+    "trend": {
+      "mean_y": 0.3181818181818182,
+      "n": 88,
+      "ci95": [
+        0.14772727272727273,
+        0.4772727272727273
+      ]
+    },
+    "periodicity": {
+      "mean_y": 0.30434782608695654,
+      "n": 46,
+      "ci95": [
+        0.043478260869565216,
+        0.5434782608695652
+      ]
+    },
+    "noise": {
+      "mean_y": -0.02857142857142857,
+      "n": 210,
+      "ci95": [
+        -0.12380952380952381,
+        0.06666666666666667
+      ]
+    },
+    "similarity": {
+      "mean_y": -0.08333333333333333,
+      "n": 120,
+      "ci95": [
+        -0.225,
+        0.058333333333333334
+      ]
+    },
+    "anomaly": {
+      "mean_y": -0.1875,
+      "n": 16,
+      "ci95": [
+        -0.5,
+        0.1875
+      ]
+    },
+    "causality": {
+      "mean_y": -0.23076923076923078,
+      "n": 13,
+      "ci95": [
+        -0.6923076923076923,
+        0.23076923076923078
+      ]
+    }
+  },
+  "loso_cv": {
+    "tau_star": 0.0,
+    "cv_argmax_tau": 0.0,
+    "optimal_basin_tau": [
+      0.0,
+      0.21
+    ],
+    "discordance_set_gain_additive": 0.04056795131845842,
+    "discordance_set_gain_learned": 0.08519269776876268,
+    "discordance_set_lookrate_additive": 1.0,
+    "discordance_set_lookrate_learned": 0.2718052738336714
+  },
+  "rejected_refinements": "Per-subtype splits within suppress branches: only noise.variance_level was marginally positive (+0.067, within-noise sampling noise) and contradicts the frozen nu_ad_fix (no_vision noise); within fire branches all subtypes were >= 0. Branch-only is the LOSO sign-stable, anti-overfit, transferable signal the pre-reg demands; subtype/flag conditioning rejected.",
+  "provenance": {
+    "fit_source": "mmts_bench/outputs/sweep_20260619/visual_trust/discordance_pooled.csv",
+    "n_fit_rows": 493,
+    "fit_date": "2026-06-20",
+    "fit_subsets": [
+      "Base",
+      "InWild"
+    ],
+    "preregistration": "mmts_bench/PREREGISTRATION_learned_gate.md (committed 646f9ac, pre-fit)"
+  }
+}
