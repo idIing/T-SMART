@@ -1,0 +1,12 @@
+Title: The Hitchhiker's Guide to Testing Statistical Significance in Natural Language Processing
+Authors: Rotem Dror, Gili Baumer, Segev Shlomov, Roi Reichart
+Source: https://aclanthology.org/P18-1128/
+
+Relevant full-text excerpt transcribed verbatim from the public ACL Anthology paper
+(proceedings pp. 1387–1388; PDF pp. 3–4):
+
+McNemar’s test (McNemar, 1947) This test is designed for paired nominal observations (binary labels). The test is applied to a 2 × 2 contingency table, which tabulates the outcomes of two algorithms on a sample of n examples. [...] That is, when applying both algorithms on the same data we would expect them to be correct/incorrect on the same proportion of items.
+
+Abstract
+
+Statistical significance testing is a standard statistical tool designed to ensure that experimental results are not coincidental. In this opinion/theoretical paper we discuss the role of statistical significance testing in Natural Language Processing (NLP) research. We establish the fundamental concepts of significance testing and discuss the specific aspects of NLP tasks, experimental setups and evaluation measures that affect the choice of significance tests in NLP research. Based on this discussion, we propose a simple practical protocol for statistical significance test selection in NLP setups and accompany this protocol with a brief survey of the most relevant tests. We then survey recent empirical papers published in ACL and TACL to examine the status of significance testing in contemporary NLP research. We conclude with a brief discussion of open issues that should be properly addressed so that this important tool can be applied in NLP research in a statistically sound manner.

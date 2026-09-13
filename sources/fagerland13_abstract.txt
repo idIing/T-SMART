@@ -1,0 +1,14 @@
+Title: The McNemar test for binary matched-pairs data: mid-p and asymptotic are better than exact conditional
+Authors: Morten W. Fagerland, Stian Lydersen, Petter Laake
+Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC3716987/
+DOI: 10.1186/1471-2288-13-91
+
+Abstract
+
+Background: Statistical methods that use the mid-p approach are useful tools to analyze categorical data, particularly for small and moderate sample sizes. Mid-p tests strike a balance between overly conservative exact methods and asymptotic methods that frequently violate the nominal level. Here, we examine a mid-p version of the McNemar exact conditional test for the analysis of paired binomial proportions.
+
+Methods: We compare the type I error rates and power of the mid-p test with those of the asymptotic McNemar test (with and without continuity correction), the McNemar exact conditional test, and an exact unconditional test using complete enumeration. We show how the mid-p test can be calculated using eight standard software packages, including Excel.
+
+Results: The mid-p test performs well compared with the asymptotic, asymptotic with continuity correction, and exact conditional tests, and almost as good as the vastly more complex exact unconditional test. Even though the mid-p test does not guarantee preservation of the significance level, it did not violate the nominal level in any of the 9595 scenarios considered in this article. It was almost as powerful as the asymptotic test. The exact conditional test and the asymptotic test with continuity correction did not perform well for any of the considered scenarios.
+
+Conclusions: The easy-to-calculate mid-p test is an excellent alternative to the complex exact unconditional test. Both can be recommended for use in any situation. We also recommend the asymptotic test if small but frequent violations of the nominal level is acceptable.

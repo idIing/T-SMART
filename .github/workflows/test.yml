@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install -e tsqa
+      - name: Import the pipeline entry point
+        # Guards the packaging regression where tsqa installed without
+        # matplotlib and importing the runner failed at module scope.
+        run: python -c "from tsqa.eval.runner import run_pipeline"
+      - name: Engine tests (tsqa)
+        run: python -m pytest tsqa/tests -q
+      - name: MMTS tests
+        run: python -m pytest mmts_bench/tests -q
+      - name: Paper tables regenerate
+        run: python make_paper_tables.py > /dev/null
